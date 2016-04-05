@@ -1,0 +1,7373 @@
+{
+  "US": {
+    "name": "United States",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "dropdown",
+            "required": true
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "tel",
+            "maxLength": "5",
+            "pattern": "[0-9]*",
+            "required": true
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "1",
+      "format": "(XXX) XXX-XXXX",
+      "pattern": "\\(?([0-9]{3})\\)\\s([0-9]{3})-([0-9]{4})",
+      "pin": true
+    },
+    "PPLite": false
+  },
+  "GB": {
+    "name": "United Kingdom",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "zipCity": {
+          "zip": {
+            "class": "medium left",
+            "type": "text",
+            "maxLength": "8",
+            "required": true,
+            "suggestion": true
+          },
+          "city": {
+            "class": "medium right"
+          }
+        }
+      },
+      {
+        "state": {
+          "class": "medium state",
+          "type": "dropdown",
+          "referValue": true,
+          "required": false
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "44",
+      "maxLength": 12,
+      "pin": true
+    },
+    "dob": {
+      "required": true,
+      "format": "ddmmyyyy",
+      "pattern": "(0[1-9]|[12][0-9]|3[01])\/(([0][1-9])|([1][0-2]))\/((1|2)[0-9]{3})",
+      "separator": "/"
+    }
+  },
+  "DE": {
+    "name": "Germany",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "zipCity": {
+          "zip": {
+            "class": "medium left",
+            "type": "tel",
+            "maxLength": "5",
+            "pattern": "[0-9]*",
+            "required": true,
+            "suggestion": true
+          },
+          "city": {
+            "class": "medium right"
+          }
+        }
+      }
+    ],
+    "addressPattern": "addressZipCity",
+    "phone": {
+      "code": "49",
+      "maxLength": 12,
+      "pin": false
+    },
+    "date": {
+      "required": true,
+      "format": "ddmmyyyy",
+      "pattern": "(0[1-9]|[12][0-9]|3[01]).(([0][1-9])|([1][0-2])).((1|2)[0-9]{3})",
+      "separator": "."
+    },
+    "PPLite": false,
+    "lang": ["en", "ge"]
+  },
+  "FR": {
+    "name": "France",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "zipCity": {
+          "zip": {
+            "class": "medium left",
+            "type": "tel",
+            "maxLength": "5",
+            "pattern": "[0-9]*",
+            "required": true
+          },
+          "city": {
+            "class": "medium right"
+          }
+        }
+      }
+    ],
+    "addressPattern": "addressZipCity",
+    "phone": {
+      "code": "33",
+      "pin": true
+    },
+    "isCEMEA": true,
+    "PPLite": false,
+    "lang": ["en", "fr"]
+  },
+  "IT": {
+    "name": "Italy",
+    "address": [
+      {
+        "address1": {
+          "class": "large",
+          "showTooltip": true
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "zip": {
+          "class": "large",
+          "type": "tel",
+          "maxLength": "5",
+          "pattern": "[0-9]*",
+          "required": true
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "state": {
+          "class": "large",
+          "type": "dropdown",
+          "required": true
+        }
+      }
+    ],
+    "phone": {
+      "code": "39",
+      "maxLength": 12,
+      "pin": true
+    },
+    "isCEMEA": true,
+    "lang": ["en", "it"]
+  },
+  "ES": {
+    "name": "Spain",
+    "address": [
+      {
+        "address1": {
+          "class": "large",
+          "showTooltip": true
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "zipCity": {
+          "zip": {
+            "class": "medium left",
+            "type": "tel",
+            "maxLength": "5",
+            "pattern": "[0-9]*",
+            "required": true,
+            "suggestion": true
+          },
+          "city": {
+            "class": "medium right",
+            "required": true
+          }
+        }
+      },
+      {
+        "state": {
+          "class": "large",
+          "type": "dropdown",
+          "referValue": true,
+          "required": true
+        }
+      }
+    ],
+    "phone": {
+      "code": "34",
+      "maxLength": 11,
+      "format": "XXX XXX XXX",
+      "pattern": "([0-9]{3})\\s([0-9]{3})\\s([0-9]{3})",
+      "pin": true
+    },
+    "isCEMEA": true,
+    "lang": ["en", "es"]
+  },
+  "AU": {
+    "name": "Australia",
+    "address": [
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "address1": {
+          "class": "large",
+          "showTooltip": true,
+          "poBox": true
+        }
+      },
+      {
+        "zipCityState": {
+          "zip": {
+            "class": "medium left",
+            "type": "tel",
+            "maxLength": "4",
+            "pattern": "[0-9]*",
+            "required": true
+          },
+          "cityState" : {
+            "type": "dropdown",
+            "required": true,
+            "class": "medium right city"
+          }
+        }
+      }
+    ],
+    "fields": {
+      "firstName": {
+        "toolTip": true
+      },
+      "middleName": {
+        "required": false
+      },
+      "marketingOptIn": {
+        "checked": "false",
+        "showMarketing" : "true"
+      }
+    },
+    "addressPattern": "address2Address1CityStateZip",
+    "phone": {
+      "code": "61",
+      "maxLength": 11,
+      "mobile": {
+        "format": "XXX XXX XXX",
+        "pattern": "([0-9]{3})\\s([0-9]{3})\\s([0-9]{3})"
+      } ,
+      "home": {
+        "format": "X XXXX XXXX",
+        "pattern": "([0-9]{1})\\s([0-9]{4})\\s([0-9]{4})"
+      },
+      "pin": true
+    },
+    "dob": {
+      "required": true,
+      "format": "ddmmyyyy",
+      "pattern": "(0[1-9]|[12][0-9]|3[01])\/(([0][1-9])|([1][0-2]))\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "retrieveBankName": "true",
+    "region": "APAC"
+  },
+  "CH": {
+    "name": "Switzerland",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "zipCity": {
+          "zip": {
+            "class": "medium left",
+            "type": "tel",
+            "maxLength": "4",
+            "pattern": "[0-9]*",
+            "required": true
+          },
+          "city": {
+            "class": "medium right",
+            "required": true
+          }
+        }
+      }
+    ],
+    "addressPattern": "addressZipCity",
+    "phone": {
+      "code": "41",
+      "maxLength": "13",
+      "format": "XXX XXX XX XX",
+      "pattern": "([0-9]{3})\\s([0-9]{3})\\s([0-9]{2})\\s([0-9]{2})"
+    },
+    "dob": {
+      "required": true,
+      "format": "ddmmyyyy",
+      "pattern": "(0[1-9]|[12][0-9]|3[01]).(([0][1-9])|([1][0-2])).((1|2)[0-9]{3})",
+      "separator": "."
+    },
+    "lang": ["en", "de", "fr"]
+  },
+  "NL": {
+    "name": "Netherlands",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "zipCity": {
+          "zip": {
+            "class": "medium left",
+            "required": true,
+            "type": "tel",
+            "maxLength": "4",
+            "pattern": "[0-9]*"
+          },
+          "city": {
+            "class": "medium right"
+          }
+        }
+      }
+    ],
+    "addressPattern": "addressZipCity",
+    "phone": {
+      "code": "31",
+      "maxLength": "11",
+      "format": "XXX XXX XXX",
+      "pattern": "([0-9]{3})\\s([0-9]{3})\\s([0-9]{3})",
+      "pin": false
+    },
+    "PPLite": true,
+    "isCEMEA": true,
+    "lang": ["en", "de"]
+  },
+  "RU": {
+    "name": "Russia",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "zipCity": {
+          "zip": {
+            "class": "medium left",
+            "type": "tel",
+            "maxLength": "6",
+            "required": true,
+            "pattern": "[0-9]*",
+            "suggestion": true
+          },
+          "city": {
+            "class": "medium right",
+            "required": true
+          }
+        }
+      },
+      {
+        "state": {
+          "class": "large",
+          "type": "text",
+          "required": false,
+          "tooltip": true
+        }
+      }
+    ],
+    "fields": {
+      "firstName": {
+        "toolTip": false
+      },
+      "surName": {
+        "toolTip": false
+      },
+      "middleName": {
+        "toolTip": true,
+        "required": false
+      },
+      "passport": {
+        "maxLength": 15
+      }
+    },
+    "phone": {
+      "code": "7",
+      "maxLength": 12,
+      "format": "XXX XXX XXXX",
+      "pattern": "([0-9]{3})\\s([0-9]{3})\\s([0-9]{4})",
+      "pin": false
+    },
+    "dob": {
+      "required": true,
+      "format": "ddmmyyyy",
+      "pattern": "(0[1-9]|[12][0-9]|3[01]).(([0][1-9])|([1][0-2])).((1|2)[0-9]{3})",
+      "separator": "."
+    },
+    "nationality": {
+      "required": true,
+      "type": "dropdown"
+    },
+    "PPLite": true,
+    "isCEMEA": true,
+    "lang": ["en", "ru"]
+  },
+  "TR": {
+    "name": "Turkey",
+    "address": [
+      {
+        "address1": {
+          "class": "large",
+          "type": "textArea"
+        }
+      },
+      {
+        "zipCity": {
+          "zip": {
+            "class": "medium left",
+            "type": "tel",
+            "maxLength": "5",
+            "required": false,
+            "pattern": "[0-9]*",
+            "suggestion": true
+          },
+          "city": {
+            "class": "medium right",
+            "type": "dropdown",
+            "referValue": true,
+            "required": true
+          }
+        }
+      }
+    ],
+    "addressPattern": "addressZipCity",
+    "phone": {
+      "code": "90",
+      "maxLength": 12,
+      "format": "XXX XXX XXXX",
+      "pattern": "([0-9]{3})\\s([0-9]{3})\\s([0-9]{4})",
+      "pin": false
+    },
+    "dob": {
+      "format": "ddmmyyyy",
+      "required": true,
+      "pattern": "(0[1-9]|[12][0-9]|3[01])\/(([0][1-9])|([1][0-2]))\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": true
+    },
+    "citizenship": true,
+    "PPLite": true,
+    "isCEMEA": true,
+    "lang": ["en", "tr"]
+  },
+  "VA": {
+    "name": "Vatican City State",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": true
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "379"
+    },
+    "isPPLite": "1",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "BG": {
+    "name": "Bulgaria",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "tel",
+            "maxLength": "4",
+            "pattern": "[0-9]*",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "359"
+    },
+    "isPPLite": "1",
+    "region": "EMEA",
+    "grpB": true
+  },
+  "EE": {
+    "name": "Estonia",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "tel",
+            "maxLength": "5",
+            "pattern": "[0-9]*",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "372"
+    },
+    "isPPLite": "1",
+    "region": "EMEA",
+    "grpB": true
+  },
+  "GI": {
+    "name": "Gibraltar",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": true
+          }
+        }
+      }
+    ],
+    "phone": {
+      "code": "350"
+    },
+    "isPPLite": "1",
+    "region": "EMEA",
+    "grpB": true
+  },
+  "LV": {
+    "name": "Latvia",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "371"
+    },
+    "isPPLite": "1",
+    "region": "EMEA",
+    "grpB": true
+  },
+  "LT": {
+    "name": "Lithuania",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "370"
+    },
+    "isPPLite": "1",
+    "region": "EMEA",
+    "grpB": true
+  },
+  "RO": {
+    "name": "Romania",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "40"
+    },
+    "isPPLite": "1",
+    "region": "EMEA",
+    "grpB": true
+  },
+  "SK": {
+    "name": "Slovakia",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "421",
+      "maxLength": "9"
+    },
+    "isPPLite": "1",
+    "region": "EMEA",
+    "grpB": true
+  },
+  "CY": {
+    "name": "Cyprus",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "tel",
+            "maxLength": "4",
+            "pattern": "[0-9]*",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "357",
+      "maxLength": "9"
+    },
+    "isPPLite": "1",
+    "region": "EMEA",
+    "grpC": true
+  },
+  "CZ": {
+    "name": "Czech Republic",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "420"
+    },
+    "isPPLite": "1",
+    "region": "EMEA",
+    "grpC": true
+  },
+  "DK": {
+    "name": "Denmark",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "zipCity": {
+          "zip": {
+            "class": "medium left",
+            "type": "tel",
+            "maxLength": "4",
+            "pattern": "[0-9]*",
+            "required": true
+          },
+          "city": {
+            "class": "medium right"
+          }
+        }
+      }
+    ],
+    "addressPattern": "addressZipCity",
+    "phone": {
+      "code": "45",
+      "pin": false
+    },
+    "isPPLite": "1",
+    "region": "EMEA",
+    "isCEMEA": true,
+    "lang": ["en", "da"]
+  },
+  "FI": {
+    "name": "Finland",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "358",
+      "pin": false
+    },
+    "isPPLite": "1",
+    "region": "EMEA",
+    "grpC": true
+  },
+  "GF": {
+    "name": "French Guiana",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "594"
+    },
+    "isPPLite": "1",
+    "region": "EMEA",
+    "grpC": true
+  },
+  "GR": {
+    "name": "Greece",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "30"
+    },
+    "isPPLite": "1",
+    "region": "EMEA",
+    "grpC": true
+  },
+  "GP": {
+    "name": "Guadeloupe",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "590"
+    },
+    "isPPLite": "1",
+    "region": "EMEA",
+    "grpC": true
+  },
+  "HU": {
+    "name": "Hungary",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "36"
+    },
+    "isPPLite": "1",
+    "region": "EMEA",
+    "grpC": true
+  },
+  "IE": {
+    "name": "Ireland",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "353",
+      "pin": false
+    },
+    "isPPLite": "1",
+    "region": "EMEA",
+    "grpB": true
+  },
+  "LI": {
+    "name": "Liechtenstein",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "423",
+      "maxLength": "9"
+    },
+    "isPPLite": "1",
+    "region": "EMEA",
+    "grpC": true
+  },
+  "LU": {
+    "name": "Luxembourg",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "zipCity": {
+          "zip": {
+            "class": "large",
+            "required": false,
+            "type": "text"
+          },
+          "city": {
+            "class": "large",
+            "required": true
+          }
+        }
+      }
+    ],
+    "addressPattern": "addressZipCity",
+    "phone": {
+      "code": "352",
+      "pin": false
+    },
+    "isPPLite": "1",
+    "region": "EMEA",
+    "grpC": true
+  },
+  "MT": {
+    "name": "Malta",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "356"
+    },
+    "isPPLite": "1",
+    "region": "EMEA",
+    "grpC": true
+  },
+  "MQ": {
+    "name": "Martinique",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "596"
+    },
+    "isPPLite": "1",
+    "region": "EMEA",
+    "grpC": true
+  },
+  "NO": {
+    "name": "Norway",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "zipCity": {
+          "zip": {
+            "class": "medium left",
+            "type": "tel",
+            "maxLength": "4",
+            "required": true
+          },
+          "city": {
+            "class": "medium right"
+          }
+        }
+      }
+    ],
+    "addressPattern": "addressZipCity",
+    "phone": {
+      "code": "47",
+      "pin": false
+    },
+    "isPPLite": "1",
+    "region": "EMEA",
+    "isCEMEA": true,
+    "lang": ["en", "no"]
+  },
+  "PT": {
+    "name": "Portugal",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "zipCity": {
+          "zip": {
+            "class": "medium left",
+            "required": false,
+            "type": "text"
+          },
+          "city": {
+            "class": "medium right",
+            "required": true
+          }
+        }
+      },
+      {
+        "state": {
+          "class": "left medium state",
+          "type": "dropdown",
+          "required": true
+        }
+      }
+    ],
+    "addressPattern": "addressZipCityState",
+    "phone": {
+      "code": "351",
+      "maxLength": 9,
+      "pin": false
+    },
+    "isPPLite": "1",
+    "region": "EMEA",
+    "grpC": true
+  },
+  "RE": {
+    "name": "Reunion",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "262"
+    },
+    "isPPLite": "1",
+    "region": "EMEA",
+    "grpC": true
+  },
+  "SM": {
+    "name": "San Marino",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "tel",
+            "maxLength": "5",
+            "pattern": "[0-9]*",
+            "required": true
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "378"
+    },
+    "isPPLite": "1",
+    "region": "EMEA",
+    "grpC": true
+  },
+  "SI": {
+    "name": "Slovenia",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "386",
+      "maxLength": "8"
+    },
+    "isPPLite": "1",
+    "region": "EMEA",
+    "grpC": true
+  },
+  "SE": {
+    "name": "Sweden",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "zipCity": {
+          "zip": {
+            "class": "medium left",
+            "required": true,
+            "type": "text"
+          },
+          "city": {
+            "class": "medium right",
+            "required": true
+          }
+        }
+      }
+    ],
+    "addressPattern": "addressZipCity",
+    "phone": {
+      "code": "46",
+      "pin": false
+    },
+    "isPPLite": "1",
+    "region": "EMEA",
+    "isCEMEA": true,
+    "lang": ["en", "se"]
+  },
+  "EG": {
+    "name": "Egypt",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "tel",
+            "maxLength": "5",
+            "pattern": "[0-9]*",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "20"
+    },
+    "dob": {
+      "required": true,
+      "format": "ddmmyyyy",
+      "pattern": "(0[1-9]|[12][0-9]|3[01])\/(([0][1-9])|([1][0-2]))\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "2",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "GE": {
+    "name": "Georgia",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "995"
+    },
+    "dob": {
+      "required": true,
+      "format": "ddmmyyyy",
+      "pattern": "(0[1-9]|[12][0-9]|3[01])\/(([0][1-9])|([1][0-2]))\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "2",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "RS": {
+    "name": "Serbia",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "381"
+    },
+    "dob": {
+      "required": true,
+      "format": "ddmmyyyy",
+      "pattern": "(0[1-9]|[12][0-9]|3[01])\/(([0][1-9])|([1][0-2]))\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "2",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "AL": {
+    "name": "Albania",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "tel",
+            "maxLength": "4",
+            "pattern": "[0-9]*",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "355"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "ppz": true
+  },
+  "DZ": {
+    "name": "Algeria",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "tel",
+            "maxLength": "5",
+            "pattern": "[0-9]*",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "213"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "ppz": true
+  },
+  "AD": {
+    "name": "Andorra",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "text",
+            "maxLength": "5",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "376"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpB": true
+  },
+  "AO": {
+    "name": "Angola",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "244",
+      "maxLength": "11",
+      "mobile": "XXX XXX XXX",
+      "home": "XXX XXX XXX"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "AM": {
+    "name": "Armenia",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "tel",
+            "maxLength": "4",
+            "pattern": "[0-9]*",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "374"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "AZ": {
+    "name": "Azerbaijan Republic",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "tel",
+            "maxLength": "4",
+            "pattern": "[0-9]*",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "994"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "BH": {
+    "name": "Bahrain",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "973"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpB": true
+  },
+  "BJ": {
+    "name": "Benin",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "229",
+      "maxLength": "8"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "BA": {
+    "name": "Bosnia and Herzegovina",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "tel",
+            "maxLength": "5",
+            "pattern": "[0-9]*",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "387"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "ppz": true
+  },
+  "BW": {
+    "name": "Botswana",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "267"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "ppz": true
+  },
+  "BF": {
+    "name": "Burkina Faso",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "226"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "BI": {
+    "name": "Burundi",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "257"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "CV": {
+    "name": "Cape Verde Escudo",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "238",
+      "maxLength": "7"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "TD": {
+    "name": "Chad",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "235"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "KM": {
+    "name": "Comoros",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "269",
+      "maxLength": "7"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "CD": {
+    "name": "Democratic Republic of the Congo",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "243"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "CG": {
+    "name": "Congo",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "242"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "CK": {
+    "name": "Cook Islands",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "tel",
+            "maxLength": "4",
+            "pattern": "[0-9]*",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "682"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "HR": {
+    "name": "Croatia",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "385"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "ppz": true
+  },
+  "DJ": {
+    "name": "Djibouti",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "253"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "ER": {
+    "name": "Eritrea",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "291"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "ET": {
+    "name": "Ethiopia",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "251",
+      "maxLength": "9"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "FO": {
+    "name": "Faroe Islands",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "298"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpB": true
+  },
+  "PF": {
+    "name": "French Polynesia",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "689"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "ppz": true
+  },
+  "GA": {
+    "name": "Gabon Republic",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "241"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "GM": {
+    "name": "Gambia",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": true
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "220",
+      "maxLength": "7"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "GL": {
+    "name": "Greenland",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "299"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpB": true
+  },
+  "GN": {
+    "name": "Guinea",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "224"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "GW": {
+    "name": "Guinea-Bissau",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "245",
+      "maxLength": "7"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "IS": {
+    "name": "Iceland",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "354"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpB": true
+  },
+  "JO": {
+    "name": "Jordan",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "962"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpB": true
+  },
+  "KZ": {
+    "name": "Kazakhstan",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "7"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "KE": {
+    "name": "Kenya",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "254",
+      "maxLength": "9"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpB": true
+  },
+  "KW": {
+    "name": "Kuwait",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "965",
+      "maxLength": "8"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpB": true
+  },
+  "KG": {
+    "name": "Kyrgyzstan",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "tel",
+            "maxLength": "6",
+            "pattern": "[0-9]*",
+            "required": true
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "996"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "LS": {
+    "name": "Lesotho",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "266"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "ppz": true
+  },
+  "MG": {
+    "name": "Madagascar",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "261"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "MW": {
+    "name": "Malawi",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": true
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "265"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "ppz": true
+  },
+  "ML": {
+    "name": "Mali",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "223"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "MR": {
+    "name": "Mauritania",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": true
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "222"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "MU": {
+    "name": "Mauritius",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "230",
+      "maxLength": "8"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "YT": {
+    "name": "Mayotte",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "tel",
+            "maxLength": "5",
+            "pattern": "[0-9]*",
+            "required": true
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "269"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "MA": {
+    "name": "Morocco",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "212"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "ppz": true
+  },
+  "MZ": {
+    "name": "Mozambique",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "258"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "ppz": true
+  },
+  "NA": {
+    "name": "Namibia",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "264"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "NC": {
+    "name": "New Caledonia",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "687"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "ppz": true
+  },
+  "NE": {
+    "name": "Niger",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "227",
+      "maxLength": "8"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "OM": {
+    "name": "Oman",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "tel",
+            "maxLength": "3",
+            "pattern": "[0-9]*",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "968",
+      "maxLength": "8"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpB": true
+  },
+  "QA": {
+    "name": "Qatar",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "974"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpB": true
+  },
+  "RW": {
+    "name": "Rwanda",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "250"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "ST": {
+    "name": "Sao Tome and Principe",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "239",
+      "maxLength": "7"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "SA": {
+    "name": "Saudi Arabia",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "966"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpB": true
+  },
+  "SN": {
+    "name": "Senegal",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "tel",
+            "maxLength": "5",
+            "pattern": "[0-9]*",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "221"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "SC": {
+    "name": "Seychelles",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "248"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "ppz": true
+  },
+  "SL": {
+    "name": "Sierra Leone",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "232"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "SO": {
+    "name": "Somalia",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "252"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "ZA": {
+    "name": "South Africa",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "tel",
+            "maxLength": "4",
+            "pattern": "[0-9]*",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "27"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpB": true
+  },
+  "SH": {
+    "name": "St Helena",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "290"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "PM": {
+    "name": "St Pierre and Miquelon",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "tel",
+            "maxLength": "5",
+            "pattern": "[0-9]*",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "508"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "SJ": {
+    "name": "Svalbard and Jan Mayen Islands",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "tel",
+            "maxLength": "4",
+            "pattern": "[0-9]*",
+            "required": true
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "47"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "SZ": {
+    "name": "Swaziland",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "268"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "TJ": {
+    "name": "Tajikistan",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "tel",
+            "maxLength": "6",
+            "pattern": "[0-9]*",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "992",
+      "maxLength": "9"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "TZ": {
+    "name": "Tanzania",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "tel",
+            "maxLength": "5",
+            "pattern": "[0-9]*",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "255"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "TG": {
+    "name": "Togo",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "228",
+      "maxLength": "8"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "TN": {
+    "name": "Tunisia",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "tel",
+            "maxLength": "4",
+            "pattern": "[0-9]*",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "216"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "TM": {
+    "name": "Turkmenistan",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "tel",
+            "maxLength": "6",
+            "pattern": "[0-9]*",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "993"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "UG": {
+    "name": "Uganda",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "256"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "UA": {
+    "name": "Ukraine",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "tel",
+            "maxLength": "5",
+            "pattern": "[0-9]*",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "380"
+    },
+    "dob": {
+      "required": true,
+      "format": "ddmmyyyy",
+      "pattern": "(0[1-9]|[12][0-9]|3[01])\/(([0][1-9])|([1][0-2]))\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "AE": {
+    "name": "United Arab Emirates",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "971"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpB": true
+  },
+  "WF": {
+    "name": "Wallis and Futuna Islands",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "tel",
+            "maxLength": "5",
+            "pattern": "[0-9]*",
+            "required": true
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "681"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "YE": {
+    "name": "Yemen",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "967"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "ZM": {
+    "name": "Zambia",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "large",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "large",
+            "type": "tel",
+            "maxLength": "5",
+            "pattern": "[0-9]*",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "260",
+      "maxLength": "9"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "EMEA",
+    "grpA": true
+  },
+  "BT": {
+    "name": "Bhutan",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "tel",
+            "maxLength": "5",
+            "pattern": "[0-9]*",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "975"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "APAC",
+    "grpA": true
+  },
+  "KH": {
+    "name": "Cambodia",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "tel",
+            "maxLength": "5",
+            "pattern": "[0-9]*",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "855"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "APAC"
+  },
+  "LA": {
+    "name": "Laos",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "tel",
+            "maxLength": "5",
+            "pattern": "[0-9]*",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "856"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "APAC",
+    "grpA": true
+  },
+  "MV": {
+    "name": "Maldives",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "tel",
+            "maxLength": "5",
+            "pattern": "[0-9]*",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "960",
+      "maxLength": "7"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "APAC",
+    "grpA": true
+  },
+  "FM": {
+    "name": "Federated States Of Micronesia",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "tel",
+            "maxLength": "5",
+            "pattern": "[0-9]*",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "691",
+      "maxLength": "7"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "APAC",
+    "grpA": true
+  },
+  "MN": {
+    "name": "Mongolia",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "tel",
+            "maxLength": "5",
+            "pattern": "[0-9]*",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "976"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "APAC",
+    "grpA": true
+  },
+  "NP": {
+    "name": "Nepal",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "tel",
+            "maxLength": "5",
+            "pattern": "[0-9]*",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "977"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "APAC",
+    "grpA": true
+  },
+  "WS": {
+    "name": "Samoa",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "685"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "APAC",
+    "grpA": true
+  },
+  "LK": {
+    "name": "Sri Lanka",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "tel",
+            "maxLength": "5",
+            "pattern": "[0-9]*",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "94",
+      "maxLength": "9"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "APAC",
+    "grpA": true
+  },
+  "TO": {
+    "name": "Tonga",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "676"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "APAC",
+    "grpA": true
+  },
+  "VN": {
+    "name": "Viet Nam",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large",
+          "required": true
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "tel",
+            "maxLength": "6",
+            "pattern": "[0-9]*",
+            "required": false
+          }
+        }
+      }
+    ],
+    "phone": {
+      "code": "84"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "APAC",
+    "grpB": true
+  },
+  "C2": {
+    "name": "China",
+    "address": [
+      {
+        "state": {
+          "class": "large state",
+          "type": "dropdown",
+          "required": true
+        }
+      },
+      {
+        "city": {
+          "class": "large",
+          "required": true
+        }
+      },
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "zip": {
+          "class": "large",
+          "type": "tel",
+          "maxLength": "6",
+          "pattern": "[0-9]*",
+          "required": true
+        }
+      }
+    ],
+    "phone": {
+      "code": "86"
+    },
+    "dob": {
+      "required": true,
+      "format": "yyyymmdd",
+      "pattern": "((1|2)[0-9]{3})\/(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "APAC"
+  },
+  "IN": {
+    "name": "India",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "required": true
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "tel",
+            "maxLength": "6",
+            "pattern": "[0-9]*",
+            "required": true
+          }
+        }
+      }
+    ],
+    "phone": {
+      "code": "91"
+    },
+    "dob": {
+      "required": true,
+      "format": "ddmmyyyy",
+      "pattern": "(0[1-9]|[12][0-9]|3[01])\/(([0][1-9])|([1][0-2]))\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "APAC",
+    "grpB": true
+  },
+  "ID": {
+    "name": "Indonesia",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "required": true
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "tel",
+            "maxLength": "5",
+            "pattern": "[0-9]*",
+            "required": false
+          }
+        }
+      }
+    ],
+    "phone": {
+      "code": "62"
+    },
+    "dob": {
+      "required": true,
+      "format": "ddmmyyyy",
+      "pattern": "(0[1-9]|[12][0-9]|3[01])\/(([0][1-9])|([1][0-2]))\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "APAC",
+    "grpB": true
+  },
+  "MY": {
+    "name": "Malaysia",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "tel",
+            "maxLength": "5",
+            "pattern": "[0-9]*",
+            "required": true
+          }
+        }
+      }
+    ],
+    "phone": {
+      "code": "60"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "APAC",
+    "grpC": true
+  },
+  "PH": {
+    "name": "Philippines",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "tel",
+            "maxLength": "4",
+            "pattern": "[0-9]*",
+            "required": true
+          }
+        }
+      }
+    ],
+    "phone": {
+      "code": "63",
+      "maxLength": "10"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "APAC"
+  },
+  "KR": {
+    "name": "South Korea",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "text",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "text",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "82"
+    },
+    "dob": {
+      "required": true,
+      "format": "mmddyyyy",
+      "pattern": "(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "APAC",
+    "grpB": true
+  },
+  "TH": {
+    "name": "Thailand",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "type": "dropdown",
+            "required": false
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "tel",
+            "maxLength": "5",
+            "pattern": "[0-9]*",
+            "required": false
+          }
+        }
+      }
+    ],
+    "addressPattern": "default",
+    "phone": {
+      "code": "66"
+    },
+    "dob": {
+      "required": true,
+      "format": "ddmmyyyy",
+      "pattern": "(0[1-9]|[12][0-9]|3[01])\/(([0][1-9])|([1][0-2]))\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "isPPLite": "3",
+    "region": "APAC",
+    "grpB": true
+  },
+  "PL": {
+    "name": "Poland",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "zipCity": {
+          "zip": {
+            "class": "medium left",
+            "type": "text",
+            "maxLength": "10",
+            "required": true
+          },
+          "city": {
+            "class": "medium right",
+            "maxLength": "40"
+          }
+        }
+      },
+      {
+        "state" : {
+          "type": "text",
+          "required": false,
+          "class": "large"
+        }
+      }
+    ],
+    "addressPattern": "addressZipCityState",
+    "phone": {
+      "code": "48",
+      "pin": false
+    },
+    "PPLite": true,
+    "isCEMEA": true,
+    "lang": ["en", "po"]
+  },
+  "AR": {
+    "name": "Argentina",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state" : {
+            "type": "dropdown",
+            "required": false,
+            "class": "medium left state"
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "text",
+            "required": true
+          }
+        }
+      }
+    ],
+    "phone": {
+      "code": "54"
+    },
+    "dob": {
+      "required": true,
+      "format": "ddmmyyyy",
+      "pattern": "(0[1-9]|[12][0-9]|3[01])\/(([0][1-9])|([1][0-2]))\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false
+    }
+  },
+  "AT": {
+    "name": "Austria",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "zipCity": {
+          "zip": {
+            "class": "medium left",
+            "required": true,
+            "type": "tel",
+            "maxLength": "4",
+            "pattern": "[0-9]*"
+          },
+          "city": {
+            "class": "medium right",
+            "required": true
+          }
+        }
+      }
+    ],
+    "addressPattern": "addressZipCity",
+    "phone": {
+      "code": "43",
+      "maxLength": "13"
+    }
+  },
+  "BE": {
+    "name": "Belgium",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "zip": {
+          "class": "large",
+          "type": "tel",
+          "maxLength": "4",
+          "pattern": "[0-9]*",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      }
+    ],
+    "phone": {
+      "code": "32",
+      "pin": false
+    },
+    "lang": ["en", "de", "fr"]
+  },
+  "BR": {
+    "name": "Brazil",
+    "address": [
+      {
+        "zip": {
+          "class": "large",
+          "type": "tel",
+          "maxLength": "9",
+          "suggestion": true,
+          "pattern" :"([0-9]{5})\\-([0-9]{3})",
+          "format": "XXXXX-XXX",
+          "required": true
+        }
+      },
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "neighborHood" : {
+          "houseNumber": {
+            "class" : "small left",
+            "required": true
+          },
+          "address2": {
+            "class": "medium right",
+            "required": false
+          },
+          "neighbor": {
+            "class": "large",
+            "required": true
+          }
+        }
+      },
+      {
+        "cityState": {
+          "city": {
+            "class": "medium left"
+          },
+          "state": {
+            "class": "medium right state",
+            "type": "dropdown",
+            "referValue": true,
+            "required": true
+          }
+        }
+      }
+    ],
+    "addressPattern": "address1StreetNumber",
+    "phone": {
+      "code": "55",
+      "maxLength": "11"
+    },
+    "fields": {
+      "firstLastName": {
+        "toolTip": false
+      },
+      "taxAndDob": {
+        "tax": {
+          "required": true,
+          "type": "tel",
+          "maxLength": "11",
+          "format": "XXX.XXX.XXX-XX"
+        },
+        "dob": {
+          "required": true,
+          "format": "ddmmyyyy",
+          "pattern": "(0[1-9]|[12][0-9]|3[01])\/(([0][1-9])|([1][0-2]))\/((1|2)[0-9]{3})",
+          "separator": "/"
+        }
+      }
+    },
+    "nationality": {
+      "required": false
+    },
+    "stateMapper" : {
+      "Acre":"AC",
+      "Alagoas":"AL",
+      "Amapá":"AP",
+      "Amazonas":"AM",
+      "Bahia":"BA",
+      "Ceará":"CE",
+      "Distrito Federal":"DF",
+      "Espírito Santo":"ES",
+      "oiás":"GO",
+      "Maranhão":"MA",
+      "Mato Grosso":"MT",
+      "Mato Grosso do Sul":"MS",
+      "Minas Gerais":"MG",
+      "Pará":"PA",
+      "Paraíba":"PB",
+      "Paraná":"PR",
+      "Pernambuco":"PE",
+      "Piauí":"PI",
+      "Rio de Janeiro":"RJ",
+      "Rio Grande do Norte":"RN",
+      "Rio Grande do Sul":"RS",
+      "Rondônia":"RO",
+      "Roraima":"RR",
+      "Santa Catarina":"SC",
+      "São Paulo":"SP",
+      "Sergipe":"SE",
+      "Tocantins":"TO"
+    }
+  },
+  "CA": {
+    "name": "Canada",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "zipCity": {
+          "zip": {
+            "class": "medium left",
+            "type": "text",
+            "maxLength": "8",
+            "required": true,
+            "suggestion": true
+          },
+          "city": {
+            "class": "medium right"
+          }
+        }
+      },
+      {
+        "state": {
+          "class": "large state",
+          "type": "dropdown",
+          "referValue": true,
+          "required": true
+        }
+      }
+    ],
+    "phone": {
+      "code": "1",
+      "maxLength": 14,
+      "format": "(XXX) XXX-XXXX",
+      "pattern": "\\(?([0-9]{3})\\)\\s([0-9]{3})-([0-9]{4})",
+      "pin": true
+    },
+    "fields": {
+      "middleName": {
+        "required": false
+      },
+      "occupation": {
+        "required": true,
+        "referValue": true
+      },
+      "tax": {
+        "required": false,
+        "type": "tel",
+        "maxLength": "11",
+        "pattern": "([0-9]{3})\\s([0-9]{3})\\s([0-9]{3})",
+        "format": "XXX XXX XXX"
+      },
+      "marketingOptIn": {
+        "checked": "true",
+        "showMarketing" : "true"
+      }
+    },
+    "dob": {
+      "required": true,
+      "format": "ddmmyyyy",
+      "pattern": "(0[1-9]|[12][0-9]|3[01])\/(([0][1-9])|([1][0-2]))\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "retrieveBankName": "true",
+    "lang": ["en", "fr"]
+  },
+  "CN": {
+    "name": "China",
+    "address": [
+      {
+        "state": {
+          "class": "large state",
+          "type": "dropdown",
+          "required": true
+        }
+      },
+      {
+        "city": {
+          "class": "large",
+          "required": true
+        }
+      },
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "zip": {
+          "class": "large",
+          "type": "tel",
+          "maxLength": "6",
+          "pattern": "[0-9]*",
+          "required": true
+        }
+      }
+    ],
+    "phone": {
+      "code": "86"
+    },
+    "dob": {
+      "required": true,
+      "format": "yyyymmdd",
+      "pattern": "((1|2)[0-9]{3})\/(([0][1-9])|([1][0-2]))\/(0[1-9]|[12][0-9]|3[01])",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false
+    },
+    "region": "APAC"
+  },
+  "HK": {
+    "name": "Honk Hong",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      }
+    ],
+    "phone": {
+      "code": "852",
+      "pin": false
+    },
+    "dob": {
+      "required": true,
+      "format": "ddmmyyyy",
+      "pattern": "(0[1-9]|[12][0-9]|3[01])\/(([0][1-9])|([1][0-2]))\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "region": "APAC"
+  },
+  "SG": {
+    "name": "Singapore",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "zipCity": {
+          "zip": {
+            "class": "medium left",
+            "type": "text",
+            "maxLength": "6",
+            "pattern": "[0-9]*",
+            "required": false
+          },
+          "city": {
+            "class": "medium right"
+          }
+        }
+      }
+    ],
+    "phone": {
+      "code": "65",
+      "pin": true
+    },
+    "dob": {
+      "required": true,
+      "format": "ddmmyyyy",
+      "pattern": "(0[1-9]|[12][0-9]|3[01])\/(([0][1-9])|([1][0-2]))\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "region": "APAC"
+  },
+  "IL": {
+    "name": "Israel",
+    "phone": {
+      "code": "972"
+    },
+    "dob": {
+      "required": true,
+      "format": "ddmmyyyy",
+      "pattern": "(0[1-9]|[12][0-9]|3[01])\/(([0][1-9])|([1][0-2]))\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "lang": ["en", "he"]
+  },
+  "JP": {
+    "name": "Japan",
+    "address": [
+      {
+        "zip": {
+          "class": "large"
+        }
+      },
+      {
+        "state": {
+          "class": "large state",
+          "required": true,
+          "type": "dropdown"
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "address1": {
+          "class": "large",
+          "required": true
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      }
+    ],
+    "phone": {
+      "code": "81"
+    },
+    "dob": {
+      "required": true,
+      "format": "yyyymmdd",
+      "pattern": "((1|2)[0-9]{3})-(([0][1-9])|([1][0-2]))-(0[1-9]|[12][0-9]|3[01])",
+      "separator": "-"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    },
+    "region": "APAC"
+  },
+  "MX": {
+    "name": "Mexico",
+    "address": [
+      {
+        "address1": {
+          "class": "large"
+        }
+      },
+      {
+        "address2": {
+          "class": "large",
+          "required": false
+        }
+      },
+      {
+        "city": {
+          "class": "large"
+        }
+      },
+      {
+        "stateZip": {
+          "state": {
+            "class": "left medium state",
+            "required": true
+          },
+          "zip": {
+            "class": "medium right",
+            "type": "tel",
+            "maxLength": "5",
+            "required": true
+          }
+        }
+      }
+    ],
+    "phone": {
+      "code": "52",
+      "pin": true
+    },
+    "dob": {
+      "required": true,
+      "format": "ddmmyyyy",
+      "pattern": "(0[1-9]|[12][0-9]|3[01])\/(([0][1-9])|([1][0-2]))\/((1|2)[0-9]{3})",
+      "separator": "/"
+    },
+    "nationality": {
+      "required": false,
+      "type": "dropdown"
+    }
+  },
+  "TW": {
+    "name": "Taiwan",
+    "phone": {
+      "code": "886",
+      "maxLength": "9"
+    },
+    "grpB": true,
+    "region": "APAC"
+  },
+  "AW": {
+    "phone": {
+      "code": "297",
+      "maxLength": "7"
+    }
+  },
+  "FK": {
+    "phone": {
+      "code": "500"
+    }
+  },
+  "AN": {
+    "phone": {
+      "code": "599"
+    }
+  },
+  "BO": {
+    "phone": {
+      "code": "591",
+      "maxLength": "8"
+    }
+  },
+  "CO": {
+    "phone": {
+      "code": "57"
+    }
+  },
+  "GT": {
+    "phone": {
+      "code": "502"
+    }
+  },
+  "GY": {
+    "phone": {
+      "code": "592"
+    }
+  },
+  "NI": {
+    "phone": {
+      "code": "505"
+    }
+  },
+  "PA": {
+    "phone": {
+      "code": "507"
+    }
+  },
+  "PE": {
+    "phone": {
+      "code": "51"
+    }
+  },
+  "SR": {
+    "phone": {
+      "code": "597"
+    }
+  },
+  "SV": {
+    "phone": {
+      "code": "503"
+    }
+  },
+  "BN": {
+    "phone": {
+      "code": "673",
+      "maxLength": "7"
+    }
+  },
+  "BZ": {
+    "phone": {
+      "code": "501",
+      "maxLength": "7"
+    }
+  },
+  "CR": {
+    "phone": {
+      "code": "506"
+    }
+  },
+  "EC": {
+    "phone": {
+      "code": "593",
+      "maxLength": "9"
+    }
+  },
+  "HN": {
+    "phone": {
+      "code": "504"
+    }
+  },
+  "KI": {
+    "phone": {
+      "code": "686"
+    }
+  },
+  "MC": {
+    "phone": {
+      "code": "377"
+    }
+  },
+  "MH": {
+    "phone": {
+      "code": "692",
+      "maxLength": "7"
+    }
+  },
+  "NF": {
+    "phone": {
+      "code": "672",
+      "maxLength": "6"
+    }
+  },
+  "NR": {
+    "phone": {
+      "code": "674",
+      "maxLength": "7"
+    }
+  },
+  "NU": {
+    "phone": {
+      "code": "683",
+      "maxLength": "4"
+    }
+  },
+  "PG": {
+    "phone": {
+      "code": "675"
+    }
+  },
+  "PN": {
+    "phone": {
+      "code": "872"
+    }
+  },
+  "SB": {
+    "phone": {
+      "code": "677"
+    }
+  },
+  "TV": {
+    "phone": {
+      "code": "688"
+    }
+  },
+  "UY": {
+    "phone": {
+      "code": "598",
+      "maxLength": "8"
+    }
+  },
+  "VE": {
+    "phone": {
+      "code": "58"
+    }
+  },
+  "VU": {
+    "phone": {
+      "code": "678"
+    }
+  },
+  "CL": {
+    "phone": {
+      "code": "56",
+      "maxLength": "9"
+    }
+  },
+  "FJ": {
+    "phone": {
+      "code": "679",
+      "maxLength": "7"
+    }
+  },
+  "PW": {
+    "phone": {
+      "code": "680",
+      "maxLength": "7"
+    }
+  },
+  "NZ": {
+    "phone": {
+      "code": "64"
+    }
+  }
+}

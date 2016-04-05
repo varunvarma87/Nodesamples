@@ -1,0 +1,225 @@
+{
+    "requestURI": "/fmx/",
+
+    "i18n": {
+        "contentPath": "path:./locales",
+        "fallback": "en-US"
+    },
+
+    "services": {
+        "servicecore": {
+            "socketTimeout": 80000,
+            "maxSockets": 30,
+            "keepAlive": true
+        },
+        "walletfi-paypal": {
+            "socketTimeout": 80000
+        },
+        "fimanagementservice_ca-paypal": {
+            "socketTimeout": 80000
+        },
+        "fundingpolicy-paypal": {
+            "socketTimeout": 80000
+        }
+    },
+
+    "features": {
+        "toggleToAddBankDone": true,
+        "unifiedLogin": true,
+        "enrollPAD": true
+    },
+
+    "express": {
+        "view engine": "js",
+        "view cache": false,
+        "views": "path:./.build/templates",
+        "mountpath": "/fmx"
+    },
+
+    "view engines": {
+        "js": {
+            "module": "engine-munger",
+            "renderer": {
+                "method": "js",
+                "arguments": [
+                    {
+                        "cache": true,
+                        "helpers": ["ppdustjs-filters-secure", "dustjs-helpers", "dusthelpers-supplement", "dusthelpers-onboarding", "dustmotes-iterate"]
+                    },
+                    {
+                        "views": "config:express.views",
+                        "view engine": "config:express.view engine",
+                        "i18n": "config:i18n"
+                    }
+                ]
+            }
+        }
+    },
+
+    "middleware": {
+        "logger": {
+            "module": {
+                "name": "morgan",
+                "arguments": [{
+                    "format": "tiny"
+                }]
+            }
+        },
+
+        "static": {
+            "enabled": true,
+            "priority": 40,
+            "name": "serve-static",
+            "module": {
+                "arguments": [ "path:./.build" ]
+            }
+        },
+
+        "expressView": {
+            "priority": 100,
+            "enabled": true,
+            "module": {
+                "name": "engine-munger/lib/expressView"
+            }
+        },
+
+        "locale": {
+            "enabled": true,
+            "priority": 101,
+            "module": {
+                "name": "locale"
+            }
+        },
+
+        // Add PayPal middleware before the router
+
+        "encryptedcookies": {
+            "enabled": true,
+            "priority": 111,
+            "module": {
+                "name": "encryptedcookies-paypal",
+                "arguments": [{
+                    "encryptionKey": "vault:encrypted_crypt_key",
+                    "macKey": "vault:encrypted_mac_key"
+                }]
+            }
+        },
+
+        "securitycontext": {
+            "enabled": true,
+            "priority": 112,
+            "module": {
+                "name": "securitycontext-paypal"
+            }
+        },
+
+        "auth": {
+            "enabled": true,
+            "priority": 113,
+            "module": {
+                "name": "auth-paypal",
+                "arguments": [{
+                    "cookieEncryptionKey": "vault:encrypted_crypt_key",
+                    "cookieMacKey": "vault:encrypted_mac_key"
+                }]
+            }
+        },
+
+        "app-authorize": {
+            "enabled": true,
+            "priority": 114,
+            "route": "\/((?!$))((?!login$))((?!fmx/login$))((?!fmx/login-processing$))((?!fmx/logout$))*",
+            "module": {
+                "name": "path:./lib/responses",
+                "method": "authorize"
+            }
+        },
+
+        // load all risk required data
+        "loadUserData": {
+            "enabled": true,
+            "priority": 115,
+            "route": "\/((?!$))((?!login$))((?!fmx/login$))((?!fmx/login-processing$))((?!fmx/logout$))*",
+            "module": {
+                "name": "path:./lib/user",
+                "method": "loadUserData"
+            }
+        },
+
+        // load all risk required data
+        "loadRiskData": {
+            "enabled": true,
+            "priority": 116,
+            "route": "\/((addBank|bankflow))*",
+            "module": {
+                "name": "path:./controllers/middleware/risk",
+                "method": "loadRiskData"
+            }
+        },
+
+        "decorators": {
+            "priority": 117,
+            "enabled": true,
+            "module": "locale"
+        },
+
+        // Update the router config to scan controllers directory
+        "router": {
+            "module": {
+                "arguments": [{
+                    "directory": "path:./routes"
+                }]
+            }
+        },
+
+        "appsec": {
+            "priority": 124,
+            "module": {
+                "arguments": [{
+                    "xframe": "SAMEORIGIN",
+                    "csrf": true,
+                    "csp": {
+                        "policy": {
+                            "default-src": "'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'",
+                            "script-src": "'self' https://www.google-analytics.com https://stats.g.doubleclick.net https://*.paypal.com https://*.paypalobjects.com http://*.paypalobjects.com 'unsafe-inline' 'unsafe-eval'",
+                            "img-src": "https://stats.g.doubleclick.net https://www.google-analytics.com http://www.google-analytics.com https://*.paypalobjects.com https://altfarm.mediaplex.com https://*.paypal.com:* http://*.paypal.com:* http://paypal.112.2o7.net *.omtrdc.net data:",
+                            "object-src": "'self' https://*.paypal.com https://*.paypalobjects.com",
+                            "media-src": "https://*.paypal.com",
+                            "font-src": "none"
+                        }
+                    }
+                }]
+            }
+        },
+
+        // Add 404 and 500 handlers after the router
+        "fileNotFound": {
+            "enabled": true,
+            "priority": 130,
+            "module": {
+                "name": "path:./lib/responses",
+                "method": "handle404"
+            }
+        },
+
+        // log all unhandled exception errors
+        "logErrors": {
+            "enabled": true,
+            "priority": 135,
+            "module": {
+                "name": "path:./lib/responses",
+                "method": "logErrors"
+            }
+        },
+
+        // server errors : 500
+        "serverError": {
+            "enabled": true,
+            "priority": 140,
+            "module": {
+                "name": "path:./lib/responses",
+                "method": "handle500"
+            }
+        }
+    }
+}

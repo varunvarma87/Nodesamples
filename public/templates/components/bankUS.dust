@@ -1,0 +1,52 @@
+<legend>{@pre type="content" key="bankUS.promptMsg"/}</legend>
+<div class="form-group">
+    <div class=" col-sm-4 col-md-4 col-lg-4">
+       <div class="input-group">
+            <label class="radio">
+                <input type="radio" name="accountType" value="CHKING" class="form-control radio-control" checked id="accountTypeChecking">
+                {@pre type="content" key="bankUS.checkingLabel"/}
+            </label>
+        </div>
+    </div>
+    <div class="col-sm-4 col-md-4 col-lg-4 clearfix">
+        <div class="input-group">
+            <label class="radio">
+                    <input type="radio" name="accountType" value="SAVINGS" class="form-control radio-control" id="accountTypeSavings">
+                    {@pre type="content" key="bankUS.savingsLabel"/}
+             </label>
+        </div>
+    </div>
+</div>
+<div class="col-md-12 hidden-xs hidden-sm">
+    <p class="bankCheck">
+        <span id="highlightRoutingNumber"></span>
+        <span id="highlightAccountNumber"></span>
+    </p>
+</div>
+
+<div class="col-sm-6 col-md-6 form-group  {?data.errors.fieldError.routingNumber.msg}has-error{/data.errors.fieldError.routingNumber.msg}">
+     <div class="input-group input-group-lg">
+        <label class="sr-only" for="routingNumber">{@pre type="content" key="bankUS.routingNumberLabel"/}</label>
+        <input type="tel" id="routingNumber" name="routingNumber" placeholder="{@pre type="content" key="bankUS.routingNumberLabel"/}" class="form-control" required="required" value="{data.inputModel.routingNumber}" autocomplete="off" autocorrect="off" autocapitalize="off" maxlength="9"/>
+        <span class="help-block error-block hide" id="routingNumberEmpty">{@pre type="content" key="bankUS.ROUTINGNUMBER_IS_NULL"/}</span>
+        <span class="help-block error-block hide " id="routingNumberFormat">{@pre type="content" key="bankUS.ROUTINGNUMBER_INVALID"/}</span>
+        <span class="help-block error-block hide" id="invalidNumber"> {@pre type="content" key="bankUS.INVALID_NUMBER" /}</span>
+        <span class="help-block error-block hide" id="routingNumberSubmit">{data.errors.fieldError.routingNumber.msg}</span>
+    </div>
+</div>
+<div class="col-sm-6 col-md-6 form-group {?data.errors.fieldError.accountNumber.msg}has-error{/data.errors.fieldError.accountNumber.msg}">
+        <div class="input-group input-group-lg input-wrapper">
+            <label class="sr-only" for="accountNumber">{@pre type="content" key="bankUS.accountNumberLabel"/}</label>
+            <input type="tel" class="form-control" id="accountNumber" placeholder="{@pre type="content" key="bankUS.accountNumberLabel"/}" name="accountNumber" required="required" value="{data.inputModel.accountNumber}" autocomplete="off" autocorrect="off" autocapitalize="off" maxlength="17"/>
+            <span class="help-block hide error-block" id="accountNumberEmpty">{@pre type="content" key="bankUS.ACCOUNTNUMBER_IS_NULL"/}</span>
+            <span class="help-block hide error-block" id="accountNumberFormat">{@pre type="content" key="bankUS.ACCOUNTNUMBER_INVALID"/}</span>
+            <span class="help-block hide error-block" id="accountNumberSubmit">{data.errors.fieldError.accountNumber.msg}</span>
+        </div>
+</div>
+<div class=" col-xs-12 col-sm-6 col-md-6 hide bankInfo" id="bankDetails">
+    {>"components/bankDetails"/}
+
+</div>
+<div class=" col-xs-12 col-sm-6 col-md-6 clearfix">
+    <span class="hide" id="bankNameNotFound">{@pre type="content" key="bankUS.BANKNAME_NOT_FOUND" /}</span>
+</div>

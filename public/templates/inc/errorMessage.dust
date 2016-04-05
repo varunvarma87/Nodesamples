@@ -1,0 +1,18 @@
+<div id="notificationBox" role="error" class="{#data.errors.global.msg}{data.errors.global.type}{/data.errors.global.msg}">
+    {#data.errors.global.msg}
+        <div id="messageBox" role="alert" class="{data.errors.global.type}">
+            <div class="{data.errors.global.type}">
+                <p><span class="alertIcon"></span><span class="message">{.|s}</span></p>
+            </div>
+        </div>
+    {/data.errors.global.msg}
+    {?data.notification}
+        <div id="notificationBox" role="notification" class="notification">
+            <div class="grid12 notification" >
+                <p>
+                    <span class="alertIcon"></span><span class="message">{data.notification.msg|s}</span>
+                </p>
+            </div>
+        </div>
+    {/data.notification}
+</div>

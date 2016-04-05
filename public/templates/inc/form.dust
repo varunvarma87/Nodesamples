@@ -1,0 +1,4 @@
+<form action="{data.flowExecutionUrl}" method="post" {?formId}id="{formId}"{/formId} class="{^proceed}proceed{/proceed}" {+formAttr/}>
+    <input type="hidden" id="csrf" name="_csrf" value="{_csrf}">
+    {+formBody /}
+</form>

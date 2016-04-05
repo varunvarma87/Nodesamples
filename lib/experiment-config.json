@@ -1,0 +1,89 @@
+{
+    "/addBank":{
+        "pxpCallRequired": {
+            "/addBank": true,
+            "/confirmBank": false
+        },
+        "pg": "FMXNODE_AddBank",
+        "control": {
+            "name": "FMXNODE_EAS_AddBank_1_Control",
+            "redirectTo": "/cgi-bin/webscr?cmd=_account",
+            "addBankVariantName": "",
+            "confirmBankVariantName": ""
+        },
+        "treatments": [
+            {
+                "redirectTo": "",
+                "treatmentName": "FMXNODE_EAS_AddBank_1_Simple_T1",
+                "addBankVariantName": "addBank",
+                "confirmBankVariantName": "confirmBank"
+            },
+            {
+                "redirectTo": "",
+                "treatmentName": "FMXNODE_EAS_AddBank_1_ProgressBar_T2",
+                "addBankVariantName": "addBankVar2",
+                "confirmBankVariantName": "confirmBank"
+            },
+            {
+                "redirectTo": "",
+                "treatmentName": "FMXNODE_EAS_AddBank_1_Notification_T4",
+                "addBankVariantName": "addBankVar4",
+                "confirmBankVariantName": "confirmBank"
+            },
+            {
+                "redirectTo": "/fmx/bankflow",
+                "treatmentName": "FMXNODE_EAS_AddBank_1_FAB_T4",
+                "addBankVariantName": "",
+                "confirmBankVariantName": ""
+            }
+        ],
+        "noTreatment": {
+            "redirectTo": "/cgi-bin/webscr?cmd=_account",
+            "addBankVariantName": "",
+            "confirmBankVariantName": ""
+        },
+        "onError": {
+            "redirectTo": "/cgi-bin/webscr?cmd=_account",
+            "addBankVariantName": "",
+            "confirmBankVariantName": ""
+        },
+        "channel": {
+            "email": {
+                "tests": [
+                    {
+                        "testName": "IDP",
+                        "treatmentName": "IDP",
+                        "redirectTo": "",
+                        "addBankVariantName": "addBank",
+                        "confirmBankVariantName": "confirmBank"
+                    },
+                    {
+                        "testName": "PAD",
+                        "treatmentName": "PAD",
+                        "redirectTo": "",
+                        "addBankVariantName": "addBankPAD",
+                        "confirmBankVariantName": "confirmBankPAD"
+                    }
+                ]
+            },
+            "banner": {
+                "tests": [
+                    {
+                        "testName": "setUp",
+                        "treatmentName": "setUp",
+                        "redirectTo": "",
+                        "addBankVariantName": "addBank",
+                        "confirmBankVariantName": "confirmBank"
+                    },
+                    {
+                        "testName": "PAD",
+                        "treatmentName": "PAD",
+                        "redirectTo": "",
+                        "addBankVariantName": "addBankPAD",
+                        "confirmBankVariantName": "confirmBankPAD"
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+<footer id="gblFooter" class="table-row" role="contentinfo">
+    <div class="footer container">
+        <div class="legal col-xs-6 col-sm-3 col-md-3 col-lg-2">
+            <p class="copyright">{@pre type="content" key="footer.copyrightText"/}</p>
+        </div>
+         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <ul>
+                <li><a href="{@pre type="content" key="footer.privacyPolicy.link"/}" target="_blank">{@pre type="content" key="footer.privacyPolicy.content"/}</a></li>
+                <li><a href="{@pre type="content" key="footer.legalAgreements.link"/}" target="_blank">{@pre type="content" key="footer.legalAgreements.content"/}</a></li>
+                <li><a href="{@pre type="content" key="footer.contactUs.link"/}" target="_blank">{@pre type="content" key="footer.contactUs.content"/}</a></li>
+            </ul>
+         </div>
+    </div>
+</footer>

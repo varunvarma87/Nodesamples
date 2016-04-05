@@ -1,0 +1,5 @@
+<div role="error" class="error">
+   <div id="messageBox" role="alert" class="{global.type}">
+        <p><span class="alertIcon"></span><span class="message">{global.msg}</span></p>
+    </div>
+</div>

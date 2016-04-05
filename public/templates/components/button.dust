@@ -1,0 +1,23 @@
+{!
+	Generic partial used for rendering a form input button.
+
+	@param name          	Input name (defaults to id value)
+	@param type          	Input type (defaults to 'submit' value)
+	@param value         	Input value
+	@param id            	Input ID
+	@param className        CSS class names to apply to the input's parent element
+	@param disabled			Input disabled
+	@param helpTextKey		helptext key to use with content
+	@param noWrapper		Boolean to indicate if wrapper is required.
+!}
+{^noWrapper}
+    <div class="btns">
+{/noWrapper}
+    <input id="{?buttonId}{buttonId}{:else}submitBtn{/buttonId}" name="{?name}{name}{:else}_eventId_continue{/name}" type="{?type}{type}{:else}submit{/type}" class="{?class}{class}{:else}button{/class}"
+            value="{value}"
+            {?disabled}disabled="{disabled}"{/disabled}
+            {?data-role}data-role="{data-role}"{/data-role}
+            />
+{^noWrapper}
+    </div>
+{/noWrapper}

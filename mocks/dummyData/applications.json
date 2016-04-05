@@ -1,0 +1,364 @@
+{
+    "cases": [
+        {
+            "name": "default",
+            "response": {
+                "statusCode": 200,
+                "body": {
+                    "errors": [],
+                    "links": [],
+                    "dimension": {
+                        "country": "US",
+                        "customer_type": "CONSUMER",
+                        "business_channel": "ANY",
+                        "technical_channel": "WEB",
+                        "partner_channel": null,
+                        "experience_channel": "ANY",
+                        "intents": [
+                            "CREATE_ACCOUNT"
+                        ]
+                    },
+                    "customer_id_type": null,
+                    "customer_id": null,
+                    "status": "COMPLETED",
+                    "id": "166575585ae64475fb888d8f058c442158931135046060131710F3Z0CY7U463K",
+                    "documents": [
+                        {
+                            "errors": [],
+                            "links": [],
+                            "id": "258cedd2dedb3482fa8e7c175c3e918e28941049949655203774PI74FW1UM5FJ",
+                            "name": "DocumentUSConsumerCreateAccountAny",
+                            "dimension": {
+                                "country": "US",
+                                "customer_type": "CONSUMER",
+                                "business_channel": "ANY",
+                                "technical_channel": "WEB",
+                                "partner_channel": null,
+                                "experience_channel": "ANY",
+                                "capability": "CREATE_ACCOUNT"
+                            },
+                            "content": {
+                                "country_of_account": {
+                                    "country": "US"
+                                },
+                                "personal_preferences": {
+                                    "language": "en_US"
+                                },
+                                "credentials": {
+                                    "email": "asdasd123322211@paypal.com",
+                                    "password": "Password12"
+                                },
+                                "personal_information_name": {
+                                    "first": "asd",
+                                    "last": "asd"
+                                },
+                                "personal_information_location": {
+                                    "line1": "ads",
+                                    "line2": "ad",
+                                    "city": "santa clara",
+                                    "county": "US",
+                                    "post_code": "95054",
+                                    "country": "US"
+                                },
+                                "personal_information_contact": {
+                                    "country_code": "US",
+                                    "phone_number": "4086804928",
+                                    "extn": "",
+                                    "tag": null
+                                },
+                                "legal_consent": {
+                                    "credit_header_consent_flag": "false",
+                                    "market_email_opt_out_flag": "false",
+                                    "legal_agreement_flag": "false",
+                                    "major_version": "3",
+                                    "minor_version": "2",
+                                    "agreement_type": "C"
+                                }
+                            },
+                            "section_meta_data": [],
+                            "status": null
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "LINK_CREDIT_CARD",
+            "criteria": [
+                {
+                    "param": "customer_id",
+                    "value": "addcard"
+                }
+            ],
+            "response": {
+                "statusCode": 200,
+                "body": {
+                    "dimension": {
+                        "country": "US",
+                        "customer_type": "CONSUMER",
+                        "business_channel": "ANY",
+                        "technical_channel": "WEB",
+                        "partner_channel": null,
+                        "experience_channel": "ANY",
+                        "intents": [
+                            "LINK_CREDIT_CARD"
+                        ]
+                    },
+                    "customer_id_type": null,
+                    "customer_id": null,
+                    "status": "COMPLETED",
+                    "id": null,
+                    "errors": [],
+                    "documents": [
+                        {
+                            "id": "2b1cafd85a35c4b739227d4736a49ca581388702208747ITJQSS43TQR2NGP74H",
+                            "name": "DocumentConsumerAddFICard",
+                            "dimension": {
+                                "country": "US",
+                                "customer_type": "CONSUMER",
+                                "business_channel": "ANY",
+                                "technical_channel": "WEB",
+                                "partner_channel": null,
+                                "experience_channel": "ANY",
+                                "capability": "ADD_CARD"
+                            },
+                            "content": {
+                                "card_details": {
+                                    "billing_address": {
+                                        "line1": "430 oak grove dr",
+                                        "line2": "",
+                                        "city": "santa clara",
+                                        "county": "CA",
+                                        "post_code": "95054",
+                                        "country": "US",
+                                        "uid": "3e5ead5d6f"
+                                    },
+                                    "account_number": "6011833688298932",
+                                    "cvv": "958",
+                                    "expiry_month": "12",
+                                    "expiry_year": "2019",
+                                    "fi_issuer": "DISC",
+                                    "uid": "3c2888dddc"
+                                }
+                            },
+                            "section_meta_data": [],
+                            "status": null,
+                            "errors": []
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "LINK_CREDIT_CARD",
+            "criteria": [
+                {
+                    "param": "customer_id",
+                    "value": "addcarderror"
+                }
+            ],
+            "response": {
+                "statusCode": 500,
+                "body": {
+                    "dimension": {
+                        "country": "US",
+                        "customer_type": "CONSUMER",
+                        "business_channel": "ANY",
+                        "technical_channel": "WEB",
+                        "partner_channel": null,
+                        "experience_channel": "ANY",
+                        "intents": [
+                            "LINK_CREDIT_CARD"
+                        ]
+                    },
+                    "customer_id_type": null,
+                    "customer_id": null,
+                    "status": "IN_PROGRESS",
+                    "id": null,
+                    "errors": [
+                        {
+                            "name": "2",
+                            "debug_id": "062fba86bcfd8",
+                            "message": "Unknown error occurred",
+                            "information_link": null,
+                            "details": []
+                        }
+                    ],
+                    "documents": [
+                        {
+                            "id": "2b1cafd85a35c4b739227d4736a49ca581388702208747ITJQSS43TQR2NGP74H",
+                            "name": "DocumentConsumerAddFICard",
+                            "dimension": {
+                                "country": "US",
+                                "customer_type": "CONSUMER",
+                                "business_channel": "ANY",
+                                "technical_channel": "WEB",
+                                "partner_channel": null,
+                                "experience_channel": "ANY",
+                                "capability": "ADD_CARD"
+                            },
+                            "content": {
+                                "card_details": {
+                                    "billing_address": {
+                                        "line1": "430 oak grove dr",
+                                        "line2": "",
+                                        "city": "santa clara",
+                                        "county": "CA",
+                                        "post_code": "95054",
+                                        "country": "US",
+                                        "uid": "3e5ead5d6f"
+                                    },
+                                    "account_number": "6011833688298932",
+                                    "cvv": "958",
+                                    "expiry_month": "12",
+                                    "expiry_year": "2019",
+                                    "fi_issuer": "DISC",
+                                    "uid": "3c2888dddc"
+                                }
+                            },
+                            "section_meta_data": [],
+                            "status": "PROCESSING_FAILED",
+                            "errors": [
+                                {
+                                    "name": "14000",
+                                    "debug_id": "062fba86bcfd8",
+                                    "message": "Internal error occurred",
+                                    "information_link": null,
+                                    "details": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "LINK_BANK_ACCOUNT",
+            "criteria": [
+                {
+                    "param": "customer_id",
+                    "value": "addbank"
+                }
+            ],
+            "response": {
+                "statusCode": 200,
+                "body": {
+                    "dimension": {
+                        "country": "US",
+                        "customer_type": "CONSUMER",
+                        "business_channel": "ANY",
+                        "technical_channel": "WEB",
+                        "partner_channel": null,
+                        "experience_channel": "ANY",
+                        "intents": [
+                            "LINK_BANK_ACCOUNT"
+                        ]
+                    },
+                    "customer_id_type": null,
+                    "customer_id": null,
+                    "status": "COMPLETED",
+                    "id": null,
+                    "errors": [],
+                    "documents": [
+                        {
+                            "id": "2b1cafd85a35c4b739227d4736a49ca581388702208747ITJQSS43TQR2NGP74H",
+                            "name": "DocumentConsumerAddFIBank",
+                            "dimension": {
+                                "country": "US",
+                                "customer_type": "CONSUMER",
+                                "business_channel": "ANY",
+                                "technical_channel": "WEB",
+                                "partner_channel": null,
+                                "experience_channel": "ANY",
+                                "capability": "ADD_BANK"
+                            },
+                            "content": {
+                                "bank_details": {
+                                    "account_number": "6011833688298932",
+                                    "account_type": "CKING",
+                                    "routing_number": "12234234234",
+                                    "currency": "USD"
+                                }
+                            },
+                            "section_meta_data": [],
+                            "status": null,
+                            "errors": []
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "LINK_BANK_ACCOUNT",
+            "criteria": [
+                {
+                    "param": "customer_id",
+                    "value": "addbankerror"
+                }
+            ],
+            "response": {
+                "statusCode": 500,
+                "body": {
+                    "dimension": {
+                        "country": "US",
+                        "customer_type": "CONSUMER",
+                        "business_channel": "ANY",
+                        "technical_channel": "WEB",
+                        "partner_channel": null,
+                        "experience_channel": "ANY",
+                        "intents": [
+                            "LINK_BANK_ACCOUNT"
+                        ]
+                    },
+                    "customer_id_type": "PAYER_ID",
+                    "customer_id": "8RCQBJQVJT9VY",
+                    "status": "IN_PROGRESS",
+                    "id": "addbankerror",
+                    "errors": [
+                        {
+                            "name": "2",
+                            "debug_id": "062fba86bcfd8",
+                            "message": "Unknown error occurred",
+                            "information_link": null,
+                            "details": []
+                        }
+                    ],
+                    "documents": [
+                        {
+                            "id": "2b1cafd85a35c4b739227d4736a49ca581388702208747ITJQSS43TQR2NGP74H",
+                            "name": "DocumentConsumerAddFIBank",
+                            "dimension": {
+                                "country": "US",
+                                "customer_type": "CONSUMER",
+                                "business_channel": "ANY",
+                                "technical_channel": "WEB",
+                                "partner_channel": null,
+                                "experience_channel": "ANY",
+                                "capability": "ADD_BANK"
+                            },
+                            "content": {
+                                "bank_details": {
+                                    "account_number": "6011833688298932",
+                                    "account_type": "CKING",
+                                    "routing_number": "12234234234",
+                                    "currency": "USD"
+                                }
+                            },
+                            "section_meta_data": [],
+                            "status": "PROCESSING_FAILED",
+                            "errors": [
+                                {
+                                    "name": "14000",
+                                    "debug_id": "062fba86bcfd8",
+                                    "message": "Internal error occurred",
+                                    "information_link": null,
+                                    "details": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

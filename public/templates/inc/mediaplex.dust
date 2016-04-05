@@ -1,0 +1,23 @@
+{@eq key="{mediaplexfor}" value="first"}
+    {@eq key="{context.locality.country}" value="US"}
+        <img src="https://altfarm.mediaplex.com/ad/bk/3484-16283-2054-70?PersAcctSUStart=1" alt="" width="1" height="1" border="0" />
+    {:else}
+        <img src="https://altfarm.mediaplex.com/ad/bk/3484-16283-2054-72?PremierAcctSUStart=1" alt="" width="1" height="1" border="0" />
+    {/eq}
+{/eq}
+
+{@eq key="{mediaplexfor}"  value="second"}
+    {@eq key="{context.locality.country}" value="US"}
+        <img src="https://altfarm.mediaplex.com/ad/bk/3484-16283-2054-70?PersAcctSUStart=1" alt="" width="1" height="1" border="0" />
+    {:else}
+        <img src="https://altfarm.mediaplex.com/ad/bk/3484-16283-2054-72?PremierAcctSUStart=1" alt="" width="1" height="1" border="0" />
+    {/eq}
+{/eq}
+
+{@eq key="{mediaplexfor}" value="done"}
+    {@eq key="{context.locality.country}" value="US"}
+        <img src="https://altfarm.mediaplex.com/ad/bk/3484-16283-2054-71?PersAcctSUFin=1&amp;mpuid={#sys.tracking.siteCatalyst.propVars}{@eq key="{prop}" value="s.prop6"}{value}{/eq}{@eq key="{prop}" value="s.pageName"};;;;;{value}{/eq}{/sys.tracking.siteCatalyst.propVars};;;;;" alt="" width="1" height="1" border="0" />
+    {:else}
+        <img src="https://altfarm.mediaplex.com/ad/bk/3484-16283-2054-73?PremierAcctSUFin=1&amp;mpuid={#sys.tracking.siteCatalyst.propVars}{@eq key="{prop}" value="s.prop6"}{value}{/eq}{@eq key="{prop}" value="s.pageName"};;;;;{value}{/eq}{/sys.tracking.siteCatalyst.propVars};;;;;" alt="" width="1" height="1" border="0" />
+    {/eq}
+{/eq}

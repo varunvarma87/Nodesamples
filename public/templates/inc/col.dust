@@ -1,0 +1,21 @@
+<div class="col{group}{?class} {class}{/class}">
+	<div class="col first">
+		{+col1 /}
+	</div>
+	<div class="col {@if cond="'{group}' === '4' || ('{group}' === '3' && '{hide}' !== '3')"}middle{:else}last{/if}{@eq key="{hide}" value="2"} hide{/eq}">
+		{+col2 /}
+	</div>
+	{@if cond="'{group}' === '3' || ('{group}' === '2' && '{hide}' === '2')"}
+        <div class="col {@eq key="{group}" value="4"}middle{:else}last{/eq}{@eq key="{hide}" value="3"} hide{/eq}">
+            {+col3 /}
+        </div>
+	{/if}
+	{@eq key="{group}" value="4"}
+	    <div class="col middle">
+            {+col3 /}
+  	    </div>
+	    <div class="col last">
+		    {+col4 /}
+	    </div>
+	{/eq}
+</div>

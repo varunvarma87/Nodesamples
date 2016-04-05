@@ -1,0 +1,19 @@
+{?data.isMiniPage}
+    {>"layouts/mini" id="error500" /}
+{:else}
+    {?data.flow}
+        {>"layouts/mobile" id="error500" isFixed="true" /}
+    {:else}
+        {>"layouts/master" id="error500" isFixed="true" /}
+    {/data.flow}
+
+    {<title}{@pre type="content" key="error500.title"/}{/title}
+{/data.isMiniPage}
+{<header}
+    <h1>{@pre type="content" key="error500.title"/}</h1>
+{/header}
+{<content}
+    <div class="trayInner">
+        <p>{@pre type="content" key="error500.internalServerError"/}</p>
+    </div>
+{/content}

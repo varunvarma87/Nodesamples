@@ -1,0 +1,21 @@
+<header class="table-row" role="banner">
+    <div class="headerContainer container">
+        <div class="col-xs-8 col-sm-10 col-md-11 col-lg-11">
+            <a href="https://www.paypal.com" class="logo">
+                <img src="https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom.png" width="109" height="29" alt="PayPal logo">
+            </a>
+        </div>
+        <div class="col-xs-4 col-sm-2 col-md-1 col-lg-1">
+            {?data.isLoggedIn}
+                <span class="logoutBtn">
+                    <a href="/cgi-bin/webscr?cmd=_logout" class="btn btn-default btn-sm" name="logout">{@pre type="content" key="header.logoutLink"/}</a>
+                </span>
+            {:else}
+                <span class="loginBtn">
+                     <a href="/cgi-bin/webscr?cmd=_login-run" class=" btn btn-sm btn-primary" name="login">{@pre type="content" key="header.loginLink"/}</a>
+                </span>
+            {/data.isLoggedIn}
+        </div>
+    </div>
+</header>
+
